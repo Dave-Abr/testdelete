@@ -16,3 +16,4 @@ for var in ['API_KEY', 'USERNAME', 'PASSWORD']:
         print(f"Warning: {var} is not set.")
 
 a= 2+2
+from dotenv import load_dotenv
