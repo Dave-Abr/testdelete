@@ -11,3 +11,6 @@ PASSWORD = os.getenv('PASSWORD')
 print(f"PASSWORD: {PASSWORD}")
 
 print("Environment variables loaded successfully.")
+for var in ['API_KEY', 'USERNAME', 'PASSWORD']:
+    if os.getenv(var) is None:
+        print(f"Warning: {var} is not set.")
